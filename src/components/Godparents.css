@@ -1,0 +1,53 @@
+.godparents {
+  background: var(--cream);
+}
+
+.godparents-title {
+  margin-bottom: 40px;
+}
+
+.godparents-grid {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+}
+
+.godparent-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.godparent-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  margin-bottom: 12px;
+  box-shadow: 0 4px 15px var(--shadow-soft);
+}
+
+.godparent-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--text-light);
+  margin-bottom: 4px;
+}
+
+.godparent-name {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--text);
+}
+
+@media (max-width: 480px) {
+  .godparents-grid {
+    gap: 32px;
+  }
+}
