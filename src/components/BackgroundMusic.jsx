@@ -25,7 +25,7 @@ export default function BackgroundMusic() {
 
   return (
     <>
-      <audio ref={audioRef} src="/sound/Tu_respirar.mp3" loop />
+      <audio ref={audioRef} src="./sound/Tu_respirar.mp3" loop />
       <motion.button
         className={`music-toggle ${muted ? 'muted' : 'playing'}`}
         onClick={toggle}

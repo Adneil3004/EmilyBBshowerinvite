@@ -22,7 +22,7 @@ export default function Hero() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2, duration: 0.6 }}
         >
-          <img src="/imgs/9102340.jpg" alt="Baby Shower" />
+          <img src="./imgs/9102340.jpg" alt="Baby Shower" />
         </motion.div>
         
         <motion.p 

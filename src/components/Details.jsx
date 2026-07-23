@@ -55,7 +55,7 @@ export default function Details() {
 
           <motion.div variants={itemVariants} className="detail-card">
             <div className="detail-icon detail-icon-amazon">
-              <img src="/imgs/amazon_logo.png" alt="Amazon" />
+              <img src="./imgs/amazon_logo.png" alt="Amazon" />
             </div>
             <h3>Mesa de Regalos</h3>
             <p className="detail-location">Amazon</p>
