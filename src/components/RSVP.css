@@ -82,7 +82,7 @@
   border-color: var(--gold);
 }
 
-.radio-option.selected {
+.radio-option:has(input:checked) {
   background: var(--gold);
   border-color: var(--gold);
   color: var(--white);
@@ -94,6 +94,17 @@
 
 .radio-option span {
   font-size: 0.95rem;
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form-errors {
+  color: #c0392b;
+  font-size: 0.8rem;
+  margin-top: 4px;
 }
 
 .submit-btn {
