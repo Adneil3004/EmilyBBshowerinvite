@@ -1,6 +1,9 @@
 import { motion } from 'framer-motion';
 import './Hero.css';
 
+const guest = {
+  name: "Guest"
+}
 const inviteData = {
   babyName: "Emily Guadalupe",
   date: "Sábado, 15 de Agosto 2026 2pm",
@@ -31,7 +34,11 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.6 }}
         >
-          Les invitamos a celebrar el baby shower de
+          Hola! 
+          <br />
+          {guest.name} 
+          <br />
+          te invitamos a celebrar el baby shower de
         </motion.p>
         
         <motion.h1 
