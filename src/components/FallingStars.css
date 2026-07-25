@@ -12,10 +12,10 @@
 .star {
   position: absolute;
   top: -10px;
-  background: var(--white);
+  background: #A8C4E0;
   border-radius: 50%;
   animation: starFall linear infinite;
-  box-shadow: 0 0 6px 2px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 6px 2px rgba(168, 196, 224, 0.8);
 }
 
 @keyframes starFall {
