@@ -36,7 +36,7 @@ export default function Hero() {
         >
           Hola! 
           <br />
-          {guest.name} 
+          <span className="hero-guest">{guest.name}</span>
           <br />
           te invitamos a celebrar el baby shower de
         </motion.p>
