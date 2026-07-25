@@ -1,11 +1,10 @@
 import { motion } from 'framer-motion';
-import { PartyPopper } from 'lucide-react';
+import { Clock } from 'lucide-react';
 import './Details.css';
 
 const detailsData = {
   title: "Baby Shower",
-  time: "2:00 PM",
-  location: "Salón de Fiestas Los Ángeles",
+  time: "3:30 PM",
   address: "Yucatán 509, Sta Maria Tulpetlac, 55400 Ecatepec de Morelos, Méx."
 };
 
@@ -42,33 +41,33 @@ export default function Details() {
           Detalles del Evento
         </motion.h2>
         
-        <div className="details-grid">
-          <motion.div variants={itemVariants} className="detail-card">
-            <div className="detail-icon">
-              <PartyPopper size={20} />
-            </div>
+        <motion.div variants={itemVariants} className="detail-card-full">
+          <div className="detail-header">
+            <img src="./imgs/bb.png" alt="Baby" className="detail-baby-img" />
             <h3>{detailsData.title}</h3>
-            <p className="detail-time">{detailsData.time}</p>
-            <p className="detail-location">{detailsData.location}</p>
-            <p className="detail-address">{detailsData.address}</p>
-          </motion.div>
+          </div>
 
-          <motion.div variants={itemVariants} className="detail-card">
-            <div className="detail-icon detail-icon-amazon">
-              <img src="./imgs/amazon_logo.png" alt="Amazon" />
+          <div className="detail-info">
+            <div className="detail-info-row">
+              <Clock size={16} />
+              <span>{detailsData.time}</span>
             </div>
-            <h3>Mesa de Regalos</h3>
-            <p className="detail-location">Amazon</p>
-            <a
-              href="https://www.amazon.com.mx/baby-reg/josedaniel-hernndez-septiembre-2026-ecatepecdemorelos/1T9O9TWFVYS1U?ref_=cm_sw_r_cp_ud_dp_AXFQVM720PTAXQ8PD8R9"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="detail-link"
-            >
-              Ver mesa de regalos
-            </a>
-          </motion.div>
-        </div>
+            <p className="detail-address">{detailsData.address}</p>
+          </div>
+        </motion.div>
+
+        <motion.div variants={itemVariants} className="detail-map">
+          <iframe
+            src="https://maps.google.com/maps?q=19.5624999,-99.0483194&z=17&output=embed"
+            width="100%"
+            height="300"
+            style={{ border: 0, borderRadius: '12px' }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Ubicación del evento"
+          />
+        </motion.div>
       </motion.div>
     </section>
   );

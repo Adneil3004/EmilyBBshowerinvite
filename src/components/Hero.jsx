@@ -1,16 +1,19 @@
+import { useMemo } from 'react';
 import { motion } from 'framer-motion';
 import './Hero.css';
 
-const guest = {
-  name: "Guest"
-}
 const inviteData = {
   babyName: "Emily Guadalupe",
-  date: "Sábado, 15 de Agosto 2026 2pm",
+  date: "Sábado, 15 de Agosto 2026 3:30pm",
   verse: "Porque los hijos son herencia de Dios"
 };
 
 export default function Hero() {
+  const guestName = useMemo(() => {
+    const params = new URLSearchParams(window.location.search);
+    return params.get('name') || 'Guest';
+  }, []);
+
   return (
     <section className="hero">
       <motion.div 
@@ -36,7 +39,7 @@ export default function Hero() {
         >
           Hola! 
           <br />
-          <span className="hero-guest">{guest.name}</span>
+          <span className="hero-guest">{guestName}</span>
           <br />
           te invitamos a celebrar el baby shower de
         </motion.p>

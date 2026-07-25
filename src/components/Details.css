@@ -7,26 +7,33 @@
   color: var(--text);
 }
 
-.details-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 32px;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.detail-card {
+.detail-card-full {
   background: var(--white);
   padding: 32px 24px;
   border-radius: 16px;
   text-align: center;
   box-shadow: 0 4px 20px var(--shadow-soft);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 24px;
 }
 
-.detail-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 30px var(--shadow-medium);
+.detail-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.detail-baby-img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.detail-header h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--text);
 }
 
 .detail-icon {
@@ -38,58 +45,33 @@
   border-radius: 50%;
   background: var(--gold-light);
   color: var(--gold);
-  margin-bottom: 16px;
+  flex-shrink: 0;
 }
 
-.detail-icon-amazon {
-  width: auto;
-  height: auto;
-  border-radius: 0;
-  background: transparent;
+.detail-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.detail-icon-amazon img {
-  width: 100%;
-  height: auto;
-}
-
-.detail-card h3 {
-  font-family: var(--font-heading);
-  font-size: 1.25rem;
-  margin-bottom: 12px;
+.detail-info-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 1rem;
+  font-weight: 500;
   color: var(--text);
-}
-
-.detail-time {
-  font-weight: 600;
-  color: var(--text);
-  margin-bottom: 8px;
-}
-
-.detail-location {
-  font-size: 0.95rem;
-  color: var(--text-light);
-  margin-bottom: 4px;
 }
 
 .detail-address {
   font-size: 0.85rem;
   color: var(--text-light);
+  margin-top: 4px;
 }
 
-.detail-link {
-  display: inline-block;
-  margin-top: 12px;
-  padding: 10px 20px;
-  background: var(--gold);
-  color: var(--white);
-  text-decoration: none;
-  border-radius: 10px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  transition: background 0.2s;
-}
-
-.detail-link:hover {
-  background: var(--text);
+.detail-map {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px var(--shadow-soft);
 }
