@@ -4,7 +4,7 @@ import './Details.css';
 
 const detailsData = {
   title: "Baby Shower",
-  time: "3:30 PM",
+  time: "14:30 PM",
   address: "Yucatán 509, Sta Maria Tulpetlac, 55400 Ecatepec de Morelos, Méx."
 };
 

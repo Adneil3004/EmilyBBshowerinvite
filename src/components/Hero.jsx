@@ -4,7 +4,7 @@ import './Hero.css';
 
 const inviteData = {
   babyName: "Emily Guadalupe",
-  date: "Sábado, 15 de Agosto 2026 3:30pm",
+  date: "Sábado, 15 de Agosto 2026 14:30pm",
   verse: "Porque los hijos son herencia de Dios"
 };
 

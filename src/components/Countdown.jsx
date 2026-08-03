@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import './Countdown.css';
 
-const TARGET = new Date('2026-08-15T15:30:00').getTime();
+const TARGET = new Date('2026-08-15T14:30:00').getTime();
 
 function calcRemaining() {
   const diff = TARGET - Date.now();

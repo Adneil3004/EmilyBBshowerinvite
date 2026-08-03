@@ -33,15 +33,7 @@ export default function Footer() {
         <p className="footer-family">
           La familia Hernandez Aldana
         </p>
-        <motion.button
-          className="whatsapp-btn"
-          onClick={shareWhatsApp}
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          <MessageCircle size={18} />
-          Compartir por WhatsApp
-        </motion.button>
+        
       </motion.div>
     </footer>
   );
